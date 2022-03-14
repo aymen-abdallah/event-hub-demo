@@ -32,6 +32,9 @@ spring:
       bindings:
         consume-in-0:
           destination: aymen-test-hub
+          
+# https://docs.datafabric.hpe.com/62/MapR_Streams/example-TimeBasedConsumer.html
+# https://stackoverflow.com/questions/63140301/how-to-get-kafka-messages-based-on-timestamp
           group: $Default
         supply-out-0:
           destination: aymen-test-hub
